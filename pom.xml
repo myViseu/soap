@@ -1,28 +1,24 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.smartbear.samples</groupId>
-    <artifactId>soapui-maven-plugin</artifactId>
+    <groupId>com.test</groupId>
+    <artifactId>test</artifactId>
     <packaging>jar</packaging>
-    <version>1.0-SNAPSHOT</version>
-    <name>Maven 2 SoapUI Sample</name>
+    <version>1.0</version>
+    <name>Soapui test</name>
     <url>http://maven.apache.org</url>
-<properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-</properties>    
-<pluginRepositories>
-    <pluginRepository>
-        <id>smartbear-sweden-plugin-repository</id>
-        <url>http://www.soapui.org/repository/maven2/</url>
-    </pluginRepository>
-</pluginRepositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>SmartBearPluginRepository</id>
+            <url>http://smartbearsoftware.com/repository/maven2/</url>
+        </pluginRepository>
+    </pluginRepositories>
     <build>
         <plugins>
             <plugin>
                 <groupId>com.smartbear.soapui</groupId>
                 <artifactId>soapui-maven-plugin</artifactId>
-                <version>5.5.0</version>
+                <version>5.5.0</version>   
                 <executions>
                     <execution>
                         <phase>test</phase>
@@ -31,6 +27,7 @@
                         </goals>
                         <configuration>
                             <projectFile>RestAPI-negativeTestSuite.xml</projectFile>
+			    <junitReport>true</junitReport>
                         </configuration>
                     </execution>
                 </executions>
