@@ -30,7 +30,7 @@
                             <goal>test</goal>
                         </goals>
                         <configuration>
-                            <projectFile>src/RestAPI-negativeTestSuite.xml</projectFile>
+                            <projectFile>ws/RestAPI-negativeTestSuite.xml</projectFile>
                             <globalProperties>
                                 <value>ENV=DEV</value>
                             </globalProperties>
