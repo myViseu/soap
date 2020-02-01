@@ -51,7 +51,6 @@
                             <projectFile>RestAPI-negativeTestSuite.xml</projectFile>
                             <outputFolder>target/surefire-reports</outputFolder>
                             <testSuite>TestSuite Countries</testSuite>
-                            <testSuite>TestSuite Paises</testSuite>
                             <junitReport>true</junitReport>
                             <exportwAll>true</exportwAll>
                             <printReport>true</printReport>
@@ -63,7 +62,22 @@
                         <phase>test</phase>
                     </execution>
 
-
+                    <execution>
+                        <id>RestAPI-negativeTestSuite2</id>
+                        <configuration>
+                            <projectFile>RestAPI-negativeTestSuite.xml</projectFile>
+                            <outputFolder>target/surefire-reports</outputFolder>
+                            <testSuite>TestSuite Paises</testSuite>
+                            <junitReport>true</junitReport>
+                            <exportwAll>true</exportwAll>
+                            <printReport>true</printReport>
+                            <testFailIgnore>true</testFailIgnore>
+                        </configuration>
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                        <phase>test</phase>
+                    </execution>
 
                 </executions>
             </plugin>
