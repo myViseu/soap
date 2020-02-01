@@ -22,6 +22,9 @@
             <plugin>
                 <groupId>com.smartbear.soapui</groupId>
                 <artifactId>soapui-maven-plugin</artifactId>
+                <configuration>
+                <classesDirectory>dummy</classesDirectory>
+            </configuration>
                 <version>5.0.0</version>
 
                 <executions>
