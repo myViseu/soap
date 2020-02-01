@@ -7,6 +7,10 @@
     <version>1.0-SNAPSHOT</version>
     <name>Maven 2 SoapUI Sample</name>
     <url>http://maven.apache.org</url>
+    <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+</properties>
 <pluginRepositories>
     <pluginRepository>
         <id>smartbear-sweden-plugin-repository</id>
@@ -18,7 +22,7 @@
             <plugin>
                 <groupId>com.smartbear.soapui</groupId>
                 <artifactId>soapui-maven-plugin</artifactId>
-                <version>5.0.0</version>
+                <version>5.5.0</version>
 
                 <executions>
                     <execution>
